@@ -1322,13 +1322,14 @@ are not listed here. They are experimental or for debugging purpose.
 	``--with-list-header``.
 
 ``--list-mline-regex-flags``
-	To be written.
+	Output list of flags which can be used in a multiline regex parser
+	definition.
 
 ``--list-params=[language|all]``
-	To be written.
+	Output list of language parameters. This works with ``--machinable``.
 
 ``--list-pseudo-tags``
-	To be written.
+	Output list of pseudo tags.
 
 ``--list-regex-flags``
 	See ctags-optlib(7).
@@ -1390,7 +1391,7 @@ are not listed here. They are experimental or for debugging purpose.
 	(``-R``) option.
 
 ``--mline-regex-<LANG>=/line_pattern/name_pattern/[flags]``
-	To be written.
+	Define multiline regular expression for locating tags in specific language.
 
 ``--options=pathname``
 	Read additional options from file or directory.
@@ -1438,22 +1439,24 @@ are not listed here. They are experimental or for debugging purpose.
    and add a link to it here.
 
 ``--param-<LANG>:name=argument``
-	To be written.
+	Set <LANG> specific parameter. Available parameters can be listed with
+	``--list-params``.
 
 ``--pattern-length-limit=N``
-	To be written.
+	Cutoff patterns of tag entries after N characters. Disable by setting to 0
+	(default is 96).
 
 ``--print-language``
 	Just prints the language parsers for specified source files, and then exits.
 
 ``--pseudo-tags=[+|-]ptag``
-	To be written.
-
 ``--pseudo-tags=*``
-	To be written.
+	Enable/disable emitting pseudo tag named ptag.
+	if \* is given, enable emitting all pseudo tags.
 
 ``--put-field-prefix``
-	To be written.
+	Put "UCTAGS" as prefix for the name of fields newly introduced in
+	universal-ctags.
 
 ``--quiet[=yes|no]``
 	Write fewer messages (default is no).
